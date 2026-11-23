@@ -28,4 +28,9 @@ public class ExpenseTrackerApplication {
 		return "This is Aryan with Rustagi";
 	}
 
+	@GetMapping("/vibe")
+	public String vibe(){
+		return "Aryan abhi bhi coding kar rha hai ";
+	}
+
 }

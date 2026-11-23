@@ -3,10 +3,10 @@ spring:
     name: expense-tracker
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/expense_tracker
-    username: postgres
-    password: Dshala@2021
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:h2:mem:expense_tracker;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
 
   jpa:
     hibernate:
@@ -17,4 +17,4 @@ spring:
         format_sql: true
 
 server:
-  port: 8081
+  port: 4000
